@@ -21,7 +21,7 @@ do
           mv "log" "log_backup/$time.log"
         fi
     
-        ./start.sh
+        $1 &>log &
     fi
 
     sleep $2
